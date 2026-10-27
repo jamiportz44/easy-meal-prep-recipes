@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple five-day meal plan with easy recipes, practical ingredients, and a weekly grocery list.">
+  <title>Meal Plans | Easy Meal Prep Guide</title>
+  <style>
+    :root {
+      --green: #315c45; --light-green: #eaf1e7; --cream: #fffaf2;
+      --orange: #e99a52; --text: #30372f; --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; color: var(--text); background: var(--cream); }
+    .notice { padding: 12px 18px; background: #f5e6d3; color: #493b2b; text-align: center; font-size: .88rem; }
+    header { background: var(--white); border-bottom: 1px solid #e5e5dc; }
+    .header-inner, main, .footer-inner { width: min(1100px, 92%); margin: auto; }
+    .header-inner { padding: 18px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo { margin: 0; color: var(--green); font-size: 1.45rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a { color: var(--green); font-weight: bold; text-decoration: none; }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    main { padding: 35px 0 55px; }
+    .hero { background: var(--light-green); border-radius: 18px; padding: clamp(28px, 6vw, 55px); margin-bottom: 35px; }
+    .eyebrow { color: var(--green); font-size: .85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 12px 0; }
+    h2, h3 { color: var(--green); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px; margin: 22px 0 35px; }
+    .card { background: var(--white); padding: 22px; border: 1px solid #e7e5da; border-radius: 14px; }
+    .card h3 { margin-top: 0; }
+    .tag { display: inline-block; background: var(--light-green); color: var(--green); padding: 4px 10px; border-radius: 20px; font-size: .85rem; font-weight: bold; }
+    .tip { background: #fff0dc; border-left: 5px solid var(--orange); border-radius: 8px; padding: 20px; margin: 28px 0; }
+    li { margin-bottom: 7px; }
+    footer { background: var(--green); color: var(--white); padding: 26px 0; }
+    footer a { color: var(--white); }
+    footer nav { margin: 15px 0; }
+    footer .notice { background: transparent; color: var(--white); padding: 12px 0 0; text-align: left; }
+    @media (max-width: 600px) { .header-inner { align-items: flex-start; flex-direction: column; } nav { gap: 8px 14px; } main { padding-top: 22px; } .hero { border-radius: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <div class="header-inner">
+      <p class="logo"><strong>Easy Meal Prep Guide</strong></p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html" aria-current="page">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Your week, organized</p>
+      <h1>A five-day meal plan made simple</h1>
+      <p>Give yourself a head start with five easy dinners that reuse ingredients, keep your grocery list manageable, and help you make the most of your time in the kitchen.</p>
+      <p><strong>Planning tip:</strong> This sample plan serves approximately two people per dinner. Adjust portions and ingredients to fit your household.</p>
+    </section>
+
+    <section>
+      <h2>Your weekday dinner schedule</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Monday</span>
+          <h3>Sheet-Pan Chicken and Vegetables</h3>
+          <p>Roast chicken breast, broccoli, and chopped potatoes with olive oil, garlic, paprika, salt, and pepper. Serve everything from one pan.</p>
+          <p><strong>Prep ahead:</strong> Chop the vegetables and mix the seasonings.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Tuesday</span>
+          <h3>Black Bean Taco Bowls</h3>
+          <p>Combine cooked rice, black beans, corn, diced tomatoes, shredded lettuce, and a spoonful of salsa. Add cheese or avocado if you like.</p>
+          <p><strong>Prep ahead:</strong> Cook rice and portion the toppings.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Wednesday</span>
+          <h3>Chicken and Vegetable Wraps</h3>
+          <p>Fill whole-wheat tortillas with cooked chicken, lettuce, shredded carrots, and a simple yogurt dressing.</p>
+          <p><strong>Prep ahead:</strong> Use leftover cooked chicken stored safely from Monday.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Thursday</span>
+          <h3>Tomato and Spinach Pasta</h3>
+          <p>Toss cooked pasta with canned diced tomatoes, spinach, garlic, olive oil, and a sprinkle of Parmesan cheese.</p>
+          <p><strong>Prep ahead:</strong> Measure the dry pasta and seasonings together.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Friday</span>
+          <h3>Easy Fried Rice</h3>
+          <p>Stir-fry cooked rice with mixed vegetables, scrambled egg, and low-sodium soy sauce. Add leftover vegetables that need to be used.</p>
+          <p><strong>Prep ahead:</strong> Portion the vegetables and sauce. Cool and refrigerate cooked rice promptly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Weekly grocery list</h2>
+      <p>Check your pantry and refrigerator before shopping. You may already have several of these ingredients.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Produce</h3>
+          <ul>
+            <li>1 head of broccoli</li>
+            <li>3 medium potatoes</li>
+            <li>1 bag of spinach</li>
+            <li>1 head of lettuce</li>
+            <li>2 carrots</li>
+            <li>1 onion and 1 bulb of garlic</li>
+            <li>1 avocado, optional</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Protein and Dairy</h3>
+          <ul>
+            <li>2 chicken breasts</li>
+            <li>1 can of black beans</li>
+            <li>4 eggs</li>
+            <li>Plain yogurt</li>
+            <li>Shredded cheese or Parmesan</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Grains and Pantry Items</h3>
+          <ul>
+            <li>Rice</li>
+            <li>Whole-wheat tortillas</li>
+            <li>Pasta</li>
+            <li>1 can of corn</li>
+            <li>1 can of diced tomatoes</li>
+            <li>Salsa and soy sauce</li>
+            <li>Olive oil, paprika, and black pepper</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="tip">
+      <h2>Make the plan work for you</h2>
+      <p>Swap meals between days when your schedule changes. Freeze portions you will not eat within a few days, and refrigerate cooked food promptly in shallow containers. Keep raw chicken separate from ready-to-eat foods and cook it to 165°F (74°C).</p>
+      <p>Want more cooking shortcuts? Visit our <a href="prep-basics.html">Prep Basics</a> page or explore more options on <a href="meal-ideas.html">Meal Ideas</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Easy Meal Prep Guide</strong>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+      <p>Simple recipes and practical planning for everyday life.</p>
+      <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
