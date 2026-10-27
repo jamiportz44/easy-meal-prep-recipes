@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Easy Meal Prep Guide shares simple recipes, weekly meal plans, and beginner-friendly meal preparation tips.">
+  <title>Easy Meal Prep Guide | Home</title>
+  <style>
+    :root {
+      --green: #315c45;
+      --light-green: #eaf1e7;
+      --cream: #fffaf2;
+      --orange: #e99a52;
+      --text: #30372f;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--cream);
+    }
+    .notice {
+      padding: 12px 18px;
+      background: #f5e6d3;
+      color: #493b2b;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e5dc;
+    }
+    .header-inner, main, .footer-inner {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+    .header-inner {
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      margin: 0;
+      color: var(--green);
+      font-size: 1.45rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+    nav a {
+      color: var(--green);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+    main { padding: 35px 0 55px; }
+    .hero {
+      background: var(--light-green);
+      border-radius: 18px;
+      padding: clamp(28px, 6vw, 65px);
+      margin-bottom: 35px;
+    }
+    .eyebrow {
+      color: var(--green);
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); margin: 12px 0; }
+    h2 { color: var(--green); margin-top: 0; }
+    h3 { color: var(--green); }
+    .hero p { max-width: 650px; font-size: 1.1rem; }
+    .button {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 8px 8px 0 0;
+    }
+    .button:hover, .button:focus { background: #234532; }
+    .button.secondary {
+      background: var(--orange);
+      color: #302719;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: 20px;
+      margin: 22px 0 35px;
+    }
+    .card {
+      background: var(--white);
+      padding: 24px;
+      border: 1px solid #e7e5da;
+      border-radius: 14px;
+    }
+    .card p { margin-bottom: 12px; }
+    .card a { color: var(--green); font-weight: bold; }
+    .icon { font-size: 2rem; }
+    .tip {
+      background: #fff0dc;
+      border-left: 5px solid var(--orange);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 28px 0;
+    }
+    footer {
+      background: var(--green);
+      color: var(--white);
+      padding: 26px 0;
+    }
+    footer a { color: var(--white); }
+    footer nav { margin: 15px 0; }
+    footer .notice {
+      background: transparent;
+      color: var(--white);
+      padding: 12px 0 0;
+      text-align: left;
+    }
+    @media (max-width: 600px) {
+      .header-inner { align-items: flex-start; flex-direction: column; }
+      nav { gap: 8px 14px; }
+      main { padding-top: 22px; }
+      .hero { border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <div class="header-inner">
+      <p class="logo"><strong>Easy Meal Prep Guide</strong></p>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Simple food. Less stress.</p>
+      <h1>Make your week easier, one meal at a time.</h1>
+      <p>Welcome to Easy Meal Prep Guide! We believe homemade meals can be simple, affordable, and delicious. Find easy recipes, organize your weekly menu, and learn how to spend less time wondering what to eat.</p>
+      <a class="button" href="meal-plans.html">Explore Meal Plans</a>
+      <a class="button secondary" href="meal-ideas.html">Find Recipe Ideas</a>
+    </section>
+
+    <section>
+      <h2>Your guide to easier meals</h2>
+      <p>Whether you are cooking for one, feeding a family, or preparing lunches for a busy college week, you can build a routine that works for you. Start with one or two recipes and add more as you get comfortable.</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🗓️</div>
+          <h3>Plan Your Week</h3>
+          <p>Take the guesswork out of dinner with a practical five-day menu and a grocery list organized around everyday ingredients.</p>
+          <a href="meal-plans.html">See the weekly plans →</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🥗</div>
+          <h3>Discover Meal Ideas</h3>
+          <p>Explore quick breakfasts, satisfying lunches, and easy dinners that use familiar ingredients without complicated steps.</p>
+          <a href="meal-ideas.html">Browse easy recipes →</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🍱</div>
+          <h3>Learn Prep Basics</h3>
+          <p>Get comfortable with planning portions, storing food safely, and preparing ingredients ahead of a busy week.</p>
+          <a href="prep-basics.html">Learn the basics →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="tip">
+      <h2>Start small this Sunday</h2>
+      <p>Choose two dinners, make a grocery list, wash your produce, and prepare one batch of grains. Even 30 minutes of preparation can make the week feel more manageable.</p>
+    </section>
+
+    <section>
+      <h2>Meet the people behind the guide</h2>
+      <p>Easy Meal Prep Guide was created by fictional home cooks Emma Brooks and Noah Miller. Emma loves finding creative uses for pantry staples, while Noah enjoys turning favorite comfort foods into practical weekday meals. Together, they share approachable ideas designed to make cooking feel less overwhelming.</p>
+      <p>Our philosophy is simple: you do not need fancy equipment or an elaborate menu to eat well at home. A little planning and a few reliable recipes can go a long way.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Easy Meal Prep Guide</strong>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+      <p>Simple recipes and practical planning for everyday life.</p>
+      <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
