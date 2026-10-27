@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jamiportz44.github.io/easy-meal-prep-recipes/sitemap.xml
