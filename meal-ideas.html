@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find simple breakfast, lunch, and dinner recipes for busy weekdays.">
+  <title>Meal Ideas | Easy Meal Prep Guide</title>
+  <style>
+    :root {
+      --green: #315c45; --light-green: #eaf1e7; --cream: #fffaf2;
+      --orange: #e99a52; --text: #30372f; --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; color: var(--text); background: var(--cream); }
+    .notice { padding: 12px 18px; background: #f5e6d3; color: #493b2b; text-align: center; font-size: .88rem; }
+    header { background: var(--white); border-bottom: 1px solid #e5e5dc; }
+    .header-inner, main, .footer-inner { width: min(1100px, 92%); margin: auto; }
+    .header-inner { padding: 18px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo { margin: 0; color: var(--green); font-size: 1.45rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a { color: var(--green); font-weight: bold; text-decoration: none; }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    main { padding: 35px 0 55px; }
+    .hero { background: var(--light-green); border-radius: 18px; padding: clamp(28px, 6vw, 55px); margin-bottom: 35px; }
+    .eyebrow { color: var(--green); font-size: .85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 12px 0; }
+    h2, h3 { color: var(--green); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px; margin: 22px 0 35px; }
+    .card { background: var(--white); padding: 22px; border: 1px solid #e7e5da; border-radius: 14px; }
+    .card h3 { margin-top: 0; }
+    .tag { display: inline-block; background: var(--light-green); color: var(--green); padding: 4px 10px; border-radius: 20px; font-size: .85rem; font-weight: bold; }
+    .tip { background: #fff0dc; border-left: 5px solid var(--orange); border-radius: 8px; padding: 20px; margin: 28px 0; }
+    li { margin-bottom: 7px; }
+    footer { background: var(--green); color: var(--white); padding: 26px 0; }
+    footer a { color: var(--white); }
+    footer nav { margin: 15px 0; }
+    footer .notice { background: transparent; color: var(--white); padding: 12px 0 0; text-align: left; }
+    @media (max-width: 600px) { .header-inner { align-items: flex-start; flex-direction: column; } nav { gap: 8px 14px; } main { padding-top: 22px; } .hero { border-radius: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <div class="header-inner">
+      <p class="logo"><strong>Easy Meal Prep Guide</strong></p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html" aria-current="page">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Find your next favorite</p>
+      <h1>Easy meal ideas for every part of your day</h1>
+      <p>Good food does not have to mean a long recipe or a sink full of dishes. These flexible ideas use everyday ingredients and simple cooking methods to make busy mornings, lunches, and dinners easier.</p>
+    </section>
+
+    <section>
+      <h2>Quick breakfasts</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">5 minutes</span>
+          <h3>Peanut Butter Banana Oats</h3>
+          <p><strong>Ingredients:</strong> Rolled oats, milk or a milk alternative, one banana, peanut butter, and cinnamon.</p>
+          <p><strong>Directions:</strong> Combine oats and milk in a microwave-safe bowl. Microwave according to the oat package instructions, then top with sliced banana, peanut butter, and cinnamon.</p>
+          <p><strong>Prep tip:</strong> Portion dry oats and cinnamon into jars ahead of time.</p>
+        </article>
+        <article class="card">
+          <span class="tag">10 minutes</span>
+          <h3>Veggie Egg Muffins</h3>
+          <p><strong>Ingredients:</strong> 6 eggs, ½ cup diced bell pepper, ¼ cup shredded cheese, salt, and pepper.</p>
+          <p><strong>Directions:</strong> Beat the eggs, stir in the vegetables and cheese, and divide into greased muffin cups. Bake at 350°F until the centers are set, about 18–22 minutes.</p>
+          <p><strong>Prep tip:</strong> Refrigerate cooked muffins for up to four days and reheat thoroughly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simple lunches</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">15 minutes</span>
+          <h3>Chicken Pasta Salad</h3>
+          <p><strong>Ingredients:</strong> Cooked pasta, cooked chicken, cucumber, cherry tomatoes, olive oil, lemon juice, and dried Italian herbs.</p>
+          <p><strong>Directions:</strong> Let the cooked pasta cool, then combine it with chopped vegetables and chicken. Toss with olive oil, lemon juice, and herbs.</p>
+          <p><strong>Prep tip:</strong> Divide into individual containers and refrigerate promptly.</p>
+        </article>
+        <article class="card">
+          <span class="tag">10 minutes</span>
+          <h3>Crunchy Chickpea Wrap</h3>
+          <p><strong>Ingredients:</strong> 1 can of chickpeas, whole-wheat tortillas, shredded lettuce, grated carrots, plain yogurt, and lemon juice.</p>
+          <p><strong>Directions:</strong> Drain and rinse the chickpeas. Lightly mash them with yogurt and lemon juice, then add lettuce and carrots to each tortilla and roll it up.</p>
+          <p><strong>Prep tip:</strong> Keep the filling separate from the tortillas until you are ready to eat.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Easy dinners</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">25 minutes</span>
+          <h3>One-Pot Tomato Pasta</h3>
+          <p><strong>Ingredients:</strong> 8 ounces pasta, 1 can diced tomatoes, 2 cups broth, 2 cloves garlic, and 2 handfuls of spinach.</p>
+          <p><strong>Directions:</strong> Add pasta, tomatoes, broth, and minced garlic to a pot. Bring to a boil and simmer, stirring regularly, until the pasta is cooked and the liquid has mostly reduced. Add spinach and stir until wilted. Add a little water if needed.</p>
+          <p><strong>Prep tip:</strong> Measure the dry ingredients before your week begins.</p>
+        </article>
+        <article class="card">
+          <span class="tag">20 minutes</span>
+          <h3>Sheet-Pan Sausage and Vegetables</h3>
+          <p><strong>Ingredients:</strong> 12 ounces fully cooked sausage, 1 bell pepper, 1 zucchini, 1 small red onion, olive oil, and Italian seasoning.</p>
+          <p><strong>Directions:</strong> Heat the oven to 400°F. Slice the sausage and vegetables, toss with oil and seasoning, and spread on a sheet pan. Roast for about 20–25 minutes, until the vegetables are tender and the sausage is heated through.</p>
+          <p><strong>Prep tip:</strong> Chop the vegetables in advance and keep them refrigerated in a covered container.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tip">
+      <h2>Build a meal from what you have</h2>
+      <p>Start with a grain such as rice or pasta, add a protein such as beans, eggs, or chicken, and finish with a vegetable and a flavorful sauce. This simple formula helps you use ingredients you already own instead of buying something new for every recipe.</p>
+      <p>For a full week of dinners, check out our <a href="meal-plans.html">Meal Plans</a>. For storage and cooking guidance, visit <a href="prep-basics.html">Prep Basics</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Easy Meal Prep Guide</strong>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+      <p>Simple recipes and practical planning for everyday life.</p>
+      <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
