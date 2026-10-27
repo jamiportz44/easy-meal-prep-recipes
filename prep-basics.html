@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn beginner-friendly meal prep techniques, food storage tips, and ways to organize your kitchen.">
+  <title>Prep Basics | Easy Meal Prep Guide</title>
+  <style>
+    :root {
+      --green: #315c45; --light-green: #eaf1e7; --cream: #fffaf2;
+      --orange: #e99a52; --text: #30372f; --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; color: var(--text); background: var(--cream); }
+    .notice { padding: 12px 18px; background: #f5e6d3; color: #493b2b; text-align: center; font-size: .88rem; }
+    header { background: var(--white); border-bottom: 1px solid #e5e5dc; }
+    .header-inner, main, .footer-inner { width: min(1100px, 92%); margin: auto; }
+    .header-inner { padding: 18px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo { margin: 0; color: var(--green); font-size: 1.45rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a { color: var(--green); font-weight: bold; text-decoration: none; }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    main { padding: 35px 0 55px; }
+    .hero { background: var(--light-green); border-radius: 18px; padding: clamp(28px, 6vw, 55px); margin-bottom: 35px; }
+    .eyebrow { color: var(--green); font-size: .85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 12px 0; }
+    h2, h3 { color: var(--green); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px; margin: 22px 0 35px; }
+    .card { background: var(--white); padding: 22px; border: 1px solid #e7e5da; border-radius: 14px; }
+    .card h3 { margin-top: 0; }
+    .number { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--green); color: var(--white); font-weight: bold; margin-right: 8px; }
+    .tip { background: #fff0dc; border-left: 5px solid var(--orange); border-radius: 8px; padding: 20px; margin: 28px 0; }
+    li { margin-bottom: 8px; }
+    footer { background: var(--green); color: var(--white); padding: 26px 0; }
+    footer a { color: var(--white); }
+    footer nav { margin: 15px 0; }
+    footer .notice { background: transparent; color: var(--white); padding: 12px 0 0; text-align: left; }
+    @media (max-width: 600px) { .header-inner { align-items: flex-start; flex-direction: column; } nav { gap: 8px 14px; } main { padding-top: 22px; } .hero { border-radius: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <div class="header-inner">
+      <p class="logo"><strong>Easy Meal Prep Guide</strong></p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html" aria-current="page">Prep Basics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Start with the basics</p>
+      <h1>Meal prep without the stress</h1>
+      <p>Meal prep does not mean cooking every meal for the entire week in one day. It simply means doing a little work ahead of time so everyday cooking becomes easier. Start with a few small habits and build a routine that fits your schedule.</p>
+    </section>
+
+    <section>
+      <h2>Four steps to get started</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><span class="number">1</span>Choose your meals</h3>
+          <p>Look at your upcoming schedule and choose two or three meals you want to prepare. Pick recipes that share ingredients, such as rice, chicken, beans, or vegetables.</p>
+        </article>
+        <article class="card">
+          <h3><span class="number">2</span>Make a grocery list</h3>
+          <p>Check your refrigerator, freezer, and pantry first. Write down only what you need, organize the list by food category, and avoid buying ingredients you already have.</p>
+        </article>
+        <article class="card">
+          <h3><span class="number">3</span>Prepare ingredients</h3>
+          <p>Wash and chop produce, measure seasonings, and cook a batch of rice or another grain. Keep raw meat separate from ready-to-eat foods and clean your work surfaces.</p>
+        </article>
+        <article class="card">
+          <h3><span class="number">4</span>Store and label</h3>
+          <p>Divide cooked food into clean, shallow containers. Label each container with its contents and preparation date, then refrigerate or freeze it promptly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Useful meal prep essentials</h2>
+      <p>You do not need an expensive kitchen setup. A few reliable tools are enough to get started.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Food storage containers</h3>
+          <p>Choose food-safe, leak-resistant containers with secure lids. Different sizes help you store individual portions, cooked grains, chopped vegetables, and sauces separately.</p>
+        </article>
+        <article class="card">
+          <h3>A sharp kitchen knife</h3>
+          <p>A suitable kitchen knife and a stable cutting board make chopping produce easier. Store knives safely and wash cutting boards after preparing raw meat.</p>
+        </article>
+        <article class="card">
+          <h3>Measuring tools</h3>
+          <p>Measuring cups, spoons, and a kitchen scale can help you portion ingredients and follow recipes consistently. A food thermometer helps you check that food reaches a safe temperature.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Food storage and safety</h2>
+      <div class="card">
+        <h3>Keep your prepared food safe</h3>
+        <ul>
+          <li>Refrigerate perishable food within two hours of cooking, or within one hour when temperatures are above 90°F.</li>
+          <li>Keep your refrigerator at 40°F (4°C) or below and your freezer at 0°F (-18°C) or below.</li>
+          <li>Use most cooked leftovers within three to four days when properly refrigerated, or freeze portions for later.</li>
+          <li>Reheat leftovers to 165°F (74°C), checking the center with a food thermometer.</li>
+          <li>Cook chicken to an internal temperature of 165°F (74°C).</li>
+          <li>Never leave cooked rice or other perishable food sitting at room temperature for extended periods.</li>
+          <li>Thaw frozen food in the refrigerator, in cold water using safe procedures, or in the microwave rather than on the counter.</li>
+        </ul>
+        <p>When in doubt about how long food has been stored or whether it was kept at a safe temperature, discard it rather than tasting it to check.</p>
+      </div>
+    </section>
+
+    <section class="tip">
+      <h2>Your first 30-minute prep session</h2>
+      <p>You can get a useful head start without spending the whole afternoon in the kitchen. Try this simple routine:</p>
+      <ul>
+        <li><strong>Minutes 0–5:</strong> Review your meals and gather ingredients and containers.</li>
+        <li><strong>Minutes 5–15:</strong> Wash produce, chop vegetables, and measure seasonings.</li>
+        <li><strong>Minutes 15–25:</strong> Start cooking a grain or preparing ingredients for your first dinner.</li>
+        <li><strong>Minutes 25–30:</strong> Label containers, clean your workspace, and put ingredients away safely.</li>
+      </ul>
+      <p>Use this as a starting routine and adjust it to match your recipes and cooking times.</p>
+    </section>
+
+    <section>
+      <h2>Keep building your routine</h2>
+      <p>Once you are comfortable preparing a few ingredients ahead of time, try planning a full week of dinners. Our <a href="meal-plans.html">Meal Plans</a> page gives you a five-day starting point, while <a href="meal-ideas.html">Meal Ideas</a> offers simple recipes for breakfast, lunch, and dinner.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Easy Meal Prep Guide</strong>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html">Meal Plans</a>
+        <a href="meal-ideas.html">Meal Ideas</a>
+        <a href="prep-basics.html">Prep Basics</a>
+      </nav>
+      <p>Simple recipes and practical planning for everyday life.</p>
+      <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
